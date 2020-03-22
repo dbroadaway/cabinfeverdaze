@@ -1,6 +1,7 @@
 
 module.exports = {
   mode: 'universal',
+  strategy: 'prefix_and_default',
   /*
   ** Headers of the page
   */
@@ -16,22 +17,28 @@ module.exports = {
     ]
   },
   router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
+    routes: [
+      {
         name: 'index',
         path: '/',
-        component: resolve(__dirname, 'pages/index.vue')
+        component: ('pages/index.vue')
       },
-      {name: 'signup',
+      {
+        name: 'signup',
         path: '/signup',
-        component: resolve(__dirname, 'pages/signup.vue')},
-      {name: 'signup2',
-          path: '/signup2',
-        component: resolve(__dirname, 'pages/signup2.vue')},
-          {name: 'signup3',
-            path: '/signup3',
-            component: resolve(__dirname, 'pages/signup3.vue')})
-    },
+        component: ('pages/signup.vue')
+      },
+      {
+        name: 'signup2',
+        path: '/signup2',
+        component: ('pages/signup2.vue')
+      },
+      {
+        name: 'signup3',
+        path: '/signup3',
+        component: ('pages/signup3.vue')
+      }
+    ]
   },
   /*
   ** Customize the progress-bar color
