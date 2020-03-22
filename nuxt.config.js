@@ -30,10 +30,7 @@ module.exports = {
         component: resolve(__dirname, 'pages/signup2.vue')},
           {name: 'signup3',
             path: '/signup3',
-            component: resolve(__dirname, 'pages/signup3.vue')},
-      {name: 'signup4',
-          path: '/signup4',
-          component: resolve(__dirname, 'pages/signup4.vue')})
+            component: resolve(__dirname, 'pages/signup3.vue')})
     },
   },
   /*

@@ -130,3 +130,8 @@ body {
 }
 
 </style>
+
+<style lang="sass">
+  .red
+    color: red
+</style>
