@@ -15,6 +15,27 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'index',
+        path: '/',
+        component: resolve(__dirname, 'pages/index.vue')
+      },
+      {name: 'signup',
+        path: '/signup',
+        component: resolve(__dirname, 'pages/signup.vue')},
+      {name: 'signup2',
+          path: '/signup2',
+        component: resolve(__dirname, 'pages/signup2.vue')},
+          {name: 'signup3',
+            path: '/signup3',
+            component: resolve(__dirname, 'pages/signup3.vue')},
+      {name: 'signup4',
+          path: '/signup4',
+          component: resolve(__dirname, 'pages/signup4.vue')})
+    },
+  },
   /*
   ** Customize the progress-bar color
   */
