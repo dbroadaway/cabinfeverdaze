@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col">
         <h1 class="text-center display-6">Cabin Fever Daze!</h1>
-        <p class="lead">Let's introduce homebound people so that we can interact remotely during the covid-19 shut down.</p>
+        <p class="test">Let's introduce homebound people so that we can interact remotely during the covid-19 shut down.</p>
         <p>We will help connect you, and then you can use your own preferred video conferencing and social tools to connect!</p>
         <hr class="my-4">
       </div>
